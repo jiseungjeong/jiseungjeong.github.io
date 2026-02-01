@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Jiseung Jeong # the main title
 
-tagline: 개발과 기술에 대한 이야기 # it will display as the subtitle
+tagline: but it did happen. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   정지승의 개발 블로그 - 개발, 기술, 그리고 다양한 주제에 대해 기록합니다.
