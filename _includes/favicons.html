@@ -1,0 +1,5 @@
+<!--
+  파비콘: assets/img/favicons/favicon.svg 만 사용 (테마 기본 favicon.ico 제거)
+-->
+{% capture favicon_path %}{{ '/assets/img/favicons' | relative_url }}{% endcapture %}
+<link rel="icon" type="image/svg+xml" href="{{ favicon_path }}/favicon.svg">
