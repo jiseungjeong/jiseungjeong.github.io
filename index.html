@@ -1,4 +1,181 @@
----
-layout: home
-# Index page
----
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Jiseung Jeong</title>
+
+    <meta name="author" content="Jiseung Jeong">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+    <link rel="apple-touch-icon" href="assets/img/favicons/apple-touch-icon.png">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+
+          <!-- ── Header ─────────────────────────────────────────── -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Jiseung Jeong
+                </p>
+                <p>
+                  I am a B.S. student in Computer Science and Engineering at
+                  <a href="https://www.unist.ac.kr/">UNIST</a>,
+                  and an undergraduate research intern at the
+                  <a href="https://sites.google.com/view/uailab">Ubiquitous AI Lab</a>,
+                  advised by Prof. <a href="https://taesikgong.com/">Taesik Gong</a>.
+                  My research interests are in efficient and interpretable on-device
+                  foundation models, with a current focus on Vision-Language-Action
+                  (VLA) systems.
+                </p>
+                <p>
+                  wjdwltmd1151 [at] unist [dot] ac [dot] kr
+                </p>
+                <p>
+                  <a href="assets/JiseungJeong-CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/jiseungjeong">GitHub</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/jiseung-jeong/">LinkedIn</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <img style="width:100%;max-width:100%;object-fit:cover;border-radius:8px;"
+                     alt="Jiseung Jeong"
+                     src="assets/img/profile.png">
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ── Research header ────────────────────────────────── -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ── Research entries ───────────────────────────────── -->
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr>
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <img src="assets/img/premover.png" width="100%" alt="Premover">
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2605.12160">
+                  <span class="papertitle">Premover: Fast Vision-Language-Action Control by Acting Before Instructions Are Complete</span>
+                </a>
+                <br>
+                <a href="https://voyager466920.github.io/Portfolio/">Joonha Park</a>,
+                <strong>Jiseung Jeong</strong>,
+                <a href="https://taesikgong.com/">Taesik Gong</a>
+                <br>
+                <em>Under review at Conference on Neural Information Processing Systems (NeurIPS)</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2605.12160">arXiv</a>
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          <!-- ── Projects header ────────────────────────────────── -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Projects</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ── Project entries ────────────────────────────────── -->
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr>
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <img src="assets/img/fused_dequant.png" width="100%" alt="Fused Dequantization">
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <span class="papertitle">Fused Dequantization for Quantized LLM Attention</span>
+                <br>
+                CUDA kernels for 4-bit dequantization (NF4, MXFP4, NVFP4) fused into
+                QKV projection, cutting attention latency 20&ndash;25% on RTX 3090.
+                Course project for CSE412 (UNIST), 1st / 13 teams.
+                <br>
+                <a href="https://github.com/ginjae/fused-qattn">code</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <img src="assets/img/quantshift.png" width="100%" alt="QuantShift">
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <span class="papertitle">QuantShift</span>
+                <br>
+                Studied self-speculative decoding under 4/8-bit quantization; showed
+                the speedup is bounded by the AR baseline, so NF4 gains nothing from
+                tuning exit depth. Course project for CSE402 (UNIST), 1st / 21
+                students.
+                <br>
+                <a href="https://github.com/jiseungjeong/QuantShift">code</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <img src="assets/img/shadow-boxing.png" width="100%" alt="Shadow Boxing Tracking with 3 Devices">
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <span class="papertitle">Shadow Boxing Tracking with 3 Devices</span>
+                <br>
+                Recognized and logged boxing motions by fusing IMU data from an
+                earbud, phone, and smartwatch. Course project for CSE465 (UNIST),
+                1st in final presentation / 8 teams.
+                <br>
+                <a href="https://github.com/jiseungjeong/PHANTOM">code</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:25%;vertical-align:middle">
+                <img src="assets/img/yolokemon.png" width="100%" alt="YOLOkemon App">
+              </td>
+              <td style="padding:8px;width:75%;vertical-align:middle">
+                <span class="papertitle">YOLOkemon App</span>
+                <br>
+                A YOLO-based Pokedex object-collection app using a
+                post-training-quantized (PTQ) model. Course project for CSE465 (UNIST).
+                <br>
+                <a href="https://www.youtube.com/shorts/AhYemXcHx1o">video</a>
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          <!-- ── Footer ─────────────────────────────────────────── -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Design and source code from
+                  <a href="https://jonbarron.info/">Jon Barron's website</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
+</html>
